@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.app.finanacial.utility.Mapping;
+import com.app.teeruch.utility.Mapping;
 
 @RestController
 public class WelcomeController {

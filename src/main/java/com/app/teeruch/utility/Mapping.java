@@ -1,4 +1,4 @@
-package com.app.finanacial.utility;
+package com.app.teeruch.utility;
 
 public class Mapping {
 
