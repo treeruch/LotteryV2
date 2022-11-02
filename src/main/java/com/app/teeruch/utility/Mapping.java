@@ -9,7 +9,7 @@ public class Mapping {
 	}
 	
 	public class PAGE {
-		public static final String LOGIN = "/Login";
+		public static final String LOGIN = "/lottery/Login";
 		
 	}
 }

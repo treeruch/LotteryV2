@@ -9,7 +9,7 @@ import com.app.teeruch.utility.Mapping;
 @RestController
 public class WelcomeController {
 	
-    @GetMapping("/welcome")
+    @GetMapping("/login")
     public ModelAndView Welcome() {
     	ModelAndView modelAndView = new ModelAndView(Mapping.PAGE.LOGIN);
         return modelAndView;
