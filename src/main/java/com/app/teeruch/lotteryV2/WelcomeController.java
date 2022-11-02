@@ -1,6 +1,7 @@
 package com.app.teeruch.lotteryV2;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -15,13 +16,6 @@ public class WelcomeController {
         return modelAndView;
     }
     
-    @GetMapping("/dashboard")
-    public ModelAndView Dashboard() {
-    	ModelAndView modelAndView = new ModelAndView(Mapping.PAGE.DASHBOARD);
-    	System.out.println("dashboard");
-        return modelAndView;
-    }
-	
 	/*
 	 * @RequestMapping(method = RequestMethod.GET, value = Mapping.CONTROLLER.LOGIN)
 	 * public ModelAndView Welcome() { ModelAndView modelAndView = new
