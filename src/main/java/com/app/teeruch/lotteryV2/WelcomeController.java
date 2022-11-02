@@ -14,6 +14,13 @@ public class WelcomeController {
     	ModelAndView modelAndView = new ModelAndView(Mapping.PAGE.LOGIN);
         return modelAndView;
     }
+    
+    @GetMapping("/dashboard")
+    public ModelAndView Dashboard() {
+    	ModelAndView modelAndView = new ModelAndView(Mapping.PAGE.DASHBOARD);
+    	System.out.println("dashboard");
+        return modelAndView;
+    }
 	
 	/*
 	 * @RequestMapping(method = RequestMethod.GET, value = Mapping.CONTROLLER.LOGIN)
