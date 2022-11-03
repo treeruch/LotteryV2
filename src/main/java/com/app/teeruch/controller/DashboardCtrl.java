@@ -35,19 +35,7 @@ public class DashboardCtrl {
 	    }
 
 
-	 @RequestMapping(method = RequestMethod.POST, value = "/dashboard")
-	 public ModelAndView dashboard1(HttpServletRequest request,HttpSession session) { 
-		ModelAndView modelAndView = new ModelAndView(Mapping.PAGE.DASHBOARD);
-		logger.info("Dashboard...");
-       /*  LotteryModel obj = lotterService.findDashboard();
-		
-		modelAndView.addObject("sumTopThree",obj.getSumTopThreePrice());
-		modelAndView.addObject("sumTod",obj.getSumTodPrice());
-		modelAndView.addObject("sumTopTwo",obj.getSumTopTwoPrice());
-		modelAndView.addObject("sumUnderTwo",obj.getSumUnderTwoPrice());
-		modelAndView.addObject("sumlottery",obj.getSumPrice()); */
-		return modelAndView; 
-	}
+	
 	
 	
 	@GetMapping("/logout")

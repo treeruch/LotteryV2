@@ -15,11 +15,13 @@ public class WelcomeController {
     	ModelAndView modelAndView = new ModelAndView(Mapping.PAGE.LOGIN);
         return modelAndView;
     }
-    
-	/*
-	 * @RequestMapping(method = RequestMethod.GET, value = Mapping.CONTROLLER.LOGIN)
-	 * public ModelAndView Welcome() { ModelAndView modelAndView = new
-	 * ModelAndView(Mapping.PAGE.LOGIN); return modelAndView; }
-	 */
+
+    @PostMapping("/dashboard")
+    public ModelAndView greetingSubmit() {
+      System.out.println("greeting post");
+      ModelAndView modelAndView = new ModelAndView(Mapping.PAGE.DASHBOARD);
+      return modelAndView;
+    }
+  
 
 }
